@@ -1,11 +1,13 @@
 local obj = {
     greetingPeople = "Hello There"
 }
-local rect = display.newRect(165, 200, 200, 50)
+
+local rect = display.newRect(display.contentCenterX, display.contentCenterY, 200, 50)
 rect.fill = {
     0, 0.8, 0
 }
-local img = display.newText(obj.greetingPeople, 165, 200)
+
+local img = display.newText(obj.greetingPeople, display.contentCenterX,  display.contentCenterY)
 img:setFillColor(1, 0, 0)
 img.size = 30
 local toggle = true
